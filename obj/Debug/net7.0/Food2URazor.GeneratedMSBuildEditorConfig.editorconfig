@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\brend\Documents\Food2U\Food2URazor
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/brend/Documents/Food2U/Food2URazor/Pages/Application/AppIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbGljYXRpb25cQXBwSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brend/Documents/Food2U/Food2URazor/Pages/Application/BrowseRestaurants.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbGljYXRpb25cQnJvd3NlUmVzdGF1cmFudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/brend/Documents/Food2U/Food2URazor/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,10 +38,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/brend/Documents/Food2U/Food2URazor/Pages/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5cTG9naW4uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/brend/Documents/Food2U/Food2URazor/Pages/Login/Success.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5cU3VjY2Vzcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/brend/Documents/Food2U/Food2URazor/Pages/Privacy.cshtml]

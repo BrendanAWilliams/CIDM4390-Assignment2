@@ -59,6 +59,56 @@ public static class SeedData
                             }
                         } 
                     }
+                },
+                new Restaurant
+                {
+                    Name = "Chipotle",
+                    Address = "123 Hall Blvd",
+                    Phone = 8067535555,
+                    Menu = new Menu
+                    {
+                        Name = "Chipotle Menu",
+                        Items = new List<Item>
+                        {
+                            new Item 
+                            {
+                                Name = "Burrito",
+                                Description = "Our Signature Burrito",
+                                Price = 7.99
+                            },
+                            new Item 
+                            {
+                                Name = "Burrito Bowl",
+                                Description = "Everything in a our Burrito, without having to feel bad.",
+                                Price = 8.99
+                            }
+                        } 
+                    }
+                },
+                new Restaurant
+                {
+                    Name = "Panera",
+                    Address = "789 Summit Cir.",
+                    Phone = 8061595555,
+                    Menu = new Menu
+                    {
+                        Name = "Panera Menu",
+                        Items = new List<Item>
+                        {
+                            new Item 
+                            {
+                                Name = "Bread Bowl",
+                                Description = "Soup in a Bowl of Carbs!",
+                                Price = 5.99
+                            },
+                            new Item 
+                            {
+                                Name = "Macaroni",
+                                Description = "EZ Cheesy",
+                                Price = 4.99
+                            }
+                        } 
+                    }
                 }
             );
             context.SaveChanges();

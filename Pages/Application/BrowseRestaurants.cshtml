@@ -1,0 +1,15 @@
+@page
+@model BrowseRestaurantsModel
+@{
+    ViewData["Title"] = "Browse Restaurants";
+}
+<h2>Restaurants</h2>
+@foreach (var item in Model.Restaurants)
+{
+    <h3>@Html.DisplayFor(modelItem => item.Name)</h3>
+    <ul>
+        <li>Address: @Html.DisplayFor(modelItem => item.Address)</li>
+        <li>Phone: @Html.DisplayFor(modelItem => item.Phone)</li>
+        <li><a class="nav-link text-dark" asp-area="" asp-page="/AppIndex">Menu</a></li>
+    </ul>
+}

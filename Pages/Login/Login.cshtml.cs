@@ -7,8 +7,8 @@ namespace Food2URazor.Pages.Login;
 
 public class LoginModel : PageModel
 {
-    [BindProperty]
-    public Credential Credential { get; set; }
+    [BindProperty, Required]
+    public Credential Credential { get; set; } = default!;
 
     private readonly Food2URazor.Data.Food2URazorContext _context;
     public LoginModel(Food2URazor.Data.Food2URazorContext context)
@@ -26,18 +26,23 @@ public class LoginModel : PageModel
     {
 
     }
-    public IActionResult OnPost()
+    public IActionResult OnPost()       //Searches Shoppers for matching username and password
     {
-        var credentialsQuery = _context.Shoppers.Where(s => s.Username == Credential.Username).Select(s => new {s.Password});
-        
         IQueryable<string> loginQuery = from s in _context.Shoppers
                                         where s.Username == Credential.Username
                                         select s.Password;
-        string pass = loginQuery.First();
-        if(pass == Credential.Password)
+
+        if(loginQuery.Count() >= 1)     //If query returns anything, check password
         {
-            return RedirectToPage("/Login/Success");
+            string pass = loginQuery.First();
+
+            if(pass == Credential.Password)
+            {
+                return RedirectToPage("/Application/AppIndex");
+            }
+            return RedirectToPage("/Login/Failed");
         }
+
         else
         {
             return RedirectToPage("/Login/Failed");
